@@ -1,4 +1,4 @@
 # splitwise
 splitwise server
-#Run
+# Run
 docker-compose up
