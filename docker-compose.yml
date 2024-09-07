@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  backend:
+    image: my-app
+    build: ./
+    container_name: splitwise
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb+srv://arckmr:password1234567@cluster0.j1iw9cu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - JWT_SECRET=YHscJUd4ZnYCf8Mx9KMLznagI8w7/n5JVG4RI9uyaPI=
